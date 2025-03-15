@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 export const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
 
   useEffect(() => {
     setMounted(true)
@@ -17,11 +17,11 @@ export const ThemeSwitch = () => {
 
   return (
     <button
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       className="fixed top-4 right-4 p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
       aria-label="テーマ切り替え"
     >
-      {theme === 'dark' ? (
+      {resolvedTheme === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
