@@ -10,7 +10,6 @@
 - Tailwind CSS: ^3.4.17
 - shadcn/ui: ^2.1.8
 - next-themes: ^0.2.1  # ダークモード対応
-- @vercel/analytics: ^1.2.0  # GA4連携
 
 ## 開発ツール
 - npm: ^10.0.0
@@ -57,13 +56,6 @@
 - Background: #111827 (Gray-900)
 - Text: #F3F4F6 (Gray-100)
 - Accent: #FBBF24 (Amber-400)
-
-## アナリティクス
-- Google Analytics 4の実装
-- イベントトラッキング
-  - リンククリック
-  - シェアボタン使用
-  - テーマ切り替え
 
 # API バージョン管理
 ## 重要な制約事項

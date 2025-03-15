@@ -19,7 +19,6 @@
 │   ├── lib/                    # ユーティリティ
 │   │   └── utils/             # 共通関数
 │   │       ├── constants.ts    # 定数定義
-│   │       ├── analytics.ts    # GA4関連の処理
 │   │       └── metadata.ts     # メタデータ関連の処理
 │   ├── styles/                 # スタイル定義
 │   │   └── globals.css        # グローバルスタイル

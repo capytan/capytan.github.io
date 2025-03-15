@@ -9,7 +9,6 @@ Next.jsで構築されたシンプルな個人用リンク集サイトです。P
 - アイコン付きリンクカード
 - ダークモード対応
 - Xシェアボタン
-- Google Analytics 4による解析
 - モバイルファーストのレスポンシブデザイン
 - SEO対策（OGP、メタデータ）
 
@@ -19,7 +18,6 @@ Next.jsで構築されたシンプルな個人用リンク集サイトです。P
 - Tailwind CSS
 - shadcn/ui
 - next-themes（ダークモード）
-- @vercel/analytics（GA4）
 
 ## 開発環境のセットアップ
 
@@ -43,8 +41,6 @@ npm install
 ```bash
 cp .env.example .env.local
 ```
-`.env.local`ファイルを編集し、必要な環境変数を設定：
-- `NEXT_PUBLIC_GA_ID`: Google Analytics 4の測定ID
 
 4. 開発サーバーの起動
 ```bash
@@ -86,9 +82,3 @@ export const siteConfig = {
 
 ## デプロイ
 GitHub Actionsを使用して、mainブランチへのプッシュ時に自動的にGitHub Pagesへデプロイされます。
-
-## ライセンス
-MIT
-
-## 作者
-[Your Name]
