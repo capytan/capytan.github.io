@@ -1,6 +1,5 @@
 'use client'
 
-import { Analytics } from '@vercel/analytics/react'
 import { ThemeProvider } from 'next-themes'
 
 export function Providers({ children }: { children: React.ReactNode }) {
@@ -12,7 +11,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
       disableTransitionOnChange
     >
       {children}
-      <Analytics />
     </ThemeProvider>
   )
 } 
