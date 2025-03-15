@@ -28,6 +28,6 @@ const config: Config = {
     },
   },
   plugins: [],
-}
+} satisfies Config
 
 export default config 
