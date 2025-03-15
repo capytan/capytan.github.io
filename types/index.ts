@@ -14,9 +14,6 @@ export type SiteConfig = {
     github: string
     blog: string
   }
-  analytics: {
-    googleAnalyticsId: string | undefined
-  }
 }
 
 export type Profile = {

@@ -14,7 +14,4 @@ export const siteConfig = {
     github: "https://github.com/capytan",
     blog: "https://blog.capytan.net",
   },
-  analytics: {
-    googleAnalyticsId: process.env.NEXT_PUBLIC_GA_ID,
-  },
 } 
