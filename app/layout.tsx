@@ -1,6 +1,6 @@
 import { siteConfig } from '@/config/site'
 import { Inter } from 'next/font/google'
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 import { Providers } from './components/providers'
 import './globals.css'
 
@@ -20,6 +20,19 @@ const inter = Inter({
   ],
 })
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  minimumScale: 1,
+  userScalable: true,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
+  ],
+  colorScheme: 'dark light',
+}
+
 export const metadata: Metadata = {
   title: siteConfig.title,
   description: siteConfig.description,
@@ -32,7 +45,6 @@ export const metadata: Metadata = {
   generator: 'Next.js',
   keywords: ['capytan', 'portfolio', 'links'],
   referrer: 'origin-when-cross-origin',
-  colorScheme: 'dark light',
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,
@@ -56,13 +68,6 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
     creator: '@capytan',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    viewportFit: 'cover',
-    minimumScale: 1,
-    userScalable: true,
-  },
   robots: {
     index: true,
     follow: true,
@@ -85,21 +90,17 @@ export const metadata: Metadata = {
     ],
     shortcut: [{ url: '/favicon.ico' }],
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#000000' },
-  ],
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: siteConfig.title,
+  },
   formatDetection: {
     telephone: false,
     date: false,
     address: false,
     email: false,
     url: false,
-  },
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: 'default',
-    title: siteConfig.title,
   },
 }
 
