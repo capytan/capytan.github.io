@@ -8,10 +8,10 @@ export const Profile = () => {
         <Image
           src={siteConfig.profile.image}
           alt={siteConfig.profile.name}
-          width={128}
-          height={128}
-          className="object-cover"
+          width={120}
+          height={120}
           priority
+          className="rounded-full object-cover"
         />
       </div>
       <div className="text-center">
