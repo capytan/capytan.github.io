@@ -1,6 +1,58 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #60a5fa;
+
+  --color-background-light: #ffffff;
+  --color-background-dark: #111827;
+
+  --color-text-light: #1f2937;
+  --color-text-dark: #f3f4f6;
+
+  --color-accent-light: #f59e0b;
+  --color-accent-dark: #fbbf24;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility link-card {
+  @apply flex items-center gap-4 p-4 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-shadow duration-200;
+}
+
+@utility link-icon {
+  @apply w-10 h-10 flex items-center justify-center rounded-full bg-primary-light dark:bg-primary-dark text-white;
+}
+
+@utility link-content {
+  @apply flex-1;
+}
+
+@utility link-title {
+  @apply text-lg font-semibold text-text-light dark:text-text-dark;
+}
+
+@utility link-description {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
 
 @layer base {
   :root {
@@ -19,27 +71,5 @@
 
   body {
     @apply bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark;
-  }
-}
-
-@layer components {
-  .link-card {
-    @apply flex items-center gap-4 p-4 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-shadow duration-200;
-  }
-
-  .link-icon {
-    @apply w-10 h-10 flex items-center justify-center rounded-full bg-primary-light dark:bg-primary-dark text-white;
-  }
-
-  .link-content {
-    @apply flex-1;
-  }
-
-  .link-title {
-    @apply text-lg font-semibold text-text-light dark:text-text-dark;
-  }
-
-  .link-description {
-    @apply text-sm text-gray-600 dark:text-gray-400;
   }
 } 
