@@ -1,0 +1,46 @@
+{
+  "name": "capytan.github.io",
+  "version": "1.0.0",
+  "description": "Next.jsで構築されたシンプルな個人用リンク集サイトです。PCやスマートフォンのブラウザから閲覧可能な静的サイトとして設計されています。",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capytan/capytan.github.io.git"
+  },
+  "keywords": [],
+  "author": "capytan",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/capytan/capytan.github.io/issues"
+  },
+  "homepage": "https://github.com/capytan/capytan.github.io#readme",
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vercel/analytics": "^1.2.0",
+    "autoprefixer": "^10.4.17",
+    "next": "^15.1.3",
+    "next-themes": "^0.2.1",
+    "postcss": "^8.4.35",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "latest",
+    "prettier": "^3.2.0"
+  }
+}

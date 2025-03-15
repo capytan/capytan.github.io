@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #3B82F6;
+    --color-background: #FFFFFF;
+    --color-text: #1F2937;
+    --color-accent: #F59E0B;
+  }
+
+  .dark {
+    --color-primary: #60A5FA;
+    --color-background: #111827;
+    --color-text: #F3F4F6;
+    --color-accent: #FBBF24;
+  }
+
+  body {
+    @apply bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark;
+  }
+}
+
+@layer components {
+  .link-card {
+    @apply flex items-center gap-4 p-4 rounded-lg bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .link-icon {
+    @apply w-10 h-10 flex items-center justify-center rounded-full bg-primary-light dark:bg-primary-dark text-white;
+  }
+
+  .link-content {
+    @apply flex-1;
+  }
+
+  .link-title {
+    @apply text-lg font-semibold text-text-light dark:text-text-dark;
+  }
+
+  .link-description {
+    @apply text-sm text-gray-600 dark:text-gray-400;
+  }
+} 
