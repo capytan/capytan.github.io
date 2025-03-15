@@ -15,6 +15,17 @@ export default function RootLayout({
       <head>
         <title>{siteConfig.title}</title>
         <meta name="description" content={siteConfig.description} />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon.svg"
+          type="image/svg+xml"
+          sizes="any"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+        />
         <meta property="og:title" content={siteConfig.title} />
         <meta property="og:description" content={siteConfig.description} />
         <meta property="og:url" content={siteConfig.url} />
