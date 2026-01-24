@@ -21,4 +21,9 @@ export const links: LinkType[] = [
     url: "https://blog.capytan.net",
     icon: "blog",
   },
+  {
+    title: "YOUTRUST",
+    url: "https://youtrust.jp/users/capytan",
+    icon: "youtrust",
+  },
 ] 

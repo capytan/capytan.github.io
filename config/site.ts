@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "capytan",
   title: "capytan's Links",
-  description: "Software Engineer | Web Developer",
+  description: "Software Engineer, SRE",
   url: "https://capytan.github.io",
   ogImage: "/images/profile/icon.jpg",
   profile: {
@@ -14,4 +14,4 @@ export const siteConfig = {
     github: "https://github.com/capytan",
     blog: "https://blog.capytan.net",
   },
-} 
+}
