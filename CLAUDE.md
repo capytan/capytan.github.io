@@ -9,11 +9,11 @@ A Linktree-style personal link collection site built with Next.js. Deployed as a
 ## Commands
 
 ```bash
-npm run dev          # Start development server (http://localhost:3000)
-npm run build        # Build for production (outputs to ./out)
-npm run lint         # Run ESLint
-npm run format       # Format code with Prettier
-npm run format:check # Check formatting without modifying
+pnpm dev          # Start development server (http://localhost:3000)
+pnpm build        # Build for production (outputs to ./out)
+pnpm lint         # Run ESLint
+pnpm format       # Format code with Prettier
+pnpm format:check # Check formatting without modifying
 ```
 
 ## Architecture
