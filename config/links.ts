@@ -7,6 +7,11 @@ export type LinkType = {
 
 export const links: LinkType[] = [
   {
+    title: "Blog",
+    url: "https://blog.capytan.net",
+    icon: "blog",
+  },
+  {
     title: "X（Twitter）",
     url: "https://x.com/capytan_el34",
     icon: "twitter",
@@ -17,13 +22,8 @@ export const links: LinkType[] = [
     icon: "github",
   },
   {
-    title: "Blog",
-    url: "https://blog.capytan.net",
-    icon: "blog",
-  },
-  {
     title: "YOUTRUST",
     url: "https://youtrust.jp/users/capytan",
     icon: "youtrust",
   },
-] 
+]
